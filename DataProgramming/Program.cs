@@ -4,33 +4,9 @@
 using DataProgramming;
 
 Console.WriteLine("============= Number 1 =============");
-var five = 5;
-var five_point_zero = 5.0;
-var five_greater_than_one = 5 > 1;
-var five_with_quotes = '5';
-var five_multiplied_by_two = 5 * 2;
-var five_with_qoute_multiplied_by_two = '5' * 2;
-var five_with_qoute_multiplied_by_two_with_qoute = '5' + '2';
-var five_devided_by_two = 5 / 2;
-var reminder = 5 % 2;
-int[] list_on_number = { 5, 2, 1 };
-var five_euquals_to_three = 5 == 3;
-var pi = Math.PI;
-
 //https://stackoverflow.com/questions/11634079/how-can-i-get-the-data-type-of-a-variable-in-c
-
-Console.WriteLine(five.GetType());
-Console.WriteLine(five_point_zero.GetType());
-Console.WriteLine(five_greater_than_one.GetType());
-Console.WriteLine(five_with_quotes.GetType());
-Console.WriteLine(five_multiplied_by_two.GetType());
-Console.WriteLine(five_with_qoute_multiplied_by_two.GetType());
-Console.WriteLine(five_with_qoute_multiplied_by_two_with_qoute.GetType());
-Console.WriteLine(five_devided_by_two.GetType());
-Console.WriteLine(reminder.GetType());
-Console.WriteLine(list_on_number.GetType());
-Console.WriteLine(five_euquals_to_three.GetType());
-Console.WriteLine(pi.GetType());
+VariableTypes variable = new VariableTypes();
+ variable.VariableType();
 
 Console.WriteLine();
 Console.WriteLine("============= Number 2 =============");
@@ -80,9 +56,15 @@ Console.WriteLine(triangleArea);
 
 Console.WriteLine();
 Console.WriteLine("============= Number 4 =============");
-
+//https://stackoverflow.com/questions/61190113/separating-even-and-odd-numbers-in-different-arrays
 Console.Write("Input the number of elements to be stored in the array: ");
 int n = Convert.ToInt32(Console.ReadLine());
 EvenAndOldArray evenAndOld = new EvenAndOldArray();
 var arrayNum = evenAndOld.EvenOldArrayNumber(n);
 Console.WriteLine(arrayNum);
+
+Console.WriteLine();
+Console.WriteLine("============= Number 5 =============");
+RectangleCoordinate coordinate = new RectangleCoordinate();
+var insideNum = coordinate.inside(1,1,0,0,2,3);
+Console.WriteLine(insideNum);

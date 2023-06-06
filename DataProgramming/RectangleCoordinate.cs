@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataProgramming
+{
+    internal class RectangleCoordinate
+    {
+        public bool inside(int x, int y, int x1, int y1, int x2, int y2)
+        {
+            if (x > x1 && x < x2 && y > y1 && y < y2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+}

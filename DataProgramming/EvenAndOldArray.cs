@@ -49,6 +49,7 @@ namespace DataProgramming
             {
                 Console.Write($"{oddArr[i]} ");
             }
+
             return n;
         }
     }

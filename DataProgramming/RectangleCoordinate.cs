@@ -8,7 +8,7 @@ namespace DataProgramming
 {
     internal class RectangleCoordinate
     {
-        public bool inside(int x, int y, int x1, int y1, int x2, int y2)
+        public bool inside(double x, double y, double x1, double y1, double x2, double y2)
         {
             if (x > x1 && x < x2 && y > y1 && y < y2)
             {
